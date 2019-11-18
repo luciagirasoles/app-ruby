@@ -1,0 +1,17 @@
+div class="main"
+    form id="formDoc" action="/" method="POST" class="formExample"
+        div class="formExample"
+            label for="name" Enter your name:
+            input type="text" name="name" id="name" value="#{!!@user ? @user[:name]: ''}" autofocus=(params[:preuser] === "false"? "" : nil) required=""
+
+        div class="formExample"
+            label for="birth" Enter date of Birth:
+            input type="date" name="birth" id="birth" value="#{!!@user ? @user[:birth]: ''}" required=""
+
+        div class="formButtons"
+            button type="submit" value="Submit" Submit!
+            button id="resetButton"type="button" value="Reset" action="/reset" Reset
+- if params[:preuser] === "true"
+  == render :slim, :'partials/modal'
+
+script src="/js/index.js"
