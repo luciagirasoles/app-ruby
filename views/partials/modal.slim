@@ -1,0 +1,6 @@
+div id="modal" class="modal"
+   div class="card"
+      h3 class="title"  "Hi #{@name}!"
+      p "Your have #{@age[:years]} years and #{@age[:days]} #{@age[:days]== 1 ? 'day' : 'days'}"
+      p "Your next birthday is #{@next_bday[:month]}-#{@next_bday[:day]}-#{@next_bday[:year]}"
+      button id="playAgain"type="button" value="Reset" action="/reset" Play again 

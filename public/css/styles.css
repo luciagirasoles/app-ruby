@@ -52,3 +52,27 @@ input:focus {
   outline: 3px solid #e2474d;
   outline-offset: 0;
 }
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 50vw;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
